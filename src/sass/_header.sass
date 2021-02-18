@@ -1,0 +1,191 @@
+.header
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    //background: url("img/scale_1200.webp") no-repeat center center
+    background: url("img/188-1880235_honey-bee-honeycomb-bee (1).png") no-repeat center center
+    background-size: 760px
+    height: 768px
+    &__conatiner
+        width: 90%
+    &__logo
+        img
+            width: 100px
+    &__nav
+        position: fixed;
+        top: 0;
+        display: flex
+        justify-content: space-around
+        align-items: center
+        background: url("img/nav.png")
+        background-size: 264px;
+        width: 100%
+        height: 80px
+        z-index: 1000
+    &__links
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 650px;
+    &__link
+        color: #000;
+        font-weight: bold;
+        font-size: 25px
+        text-decoration: none
+        font-family: 'Poiret One', cursive;
+    &__text
+        text-align: center
+    &__title
+        color: #ffffff
+        font-size: 94px
+        font-family: 'Marck Script', cursive;
+.mobile
+    display: none
+    &__nav
+        position: fixed;
+        top: 0;
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        align-items: center
+        background: url("img/nav.png")
+        background-size: 264px;
+        width: 100%
+        height: 80px
+        z-index: 1000
+        transition: 0.6s
+    &__container
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        width: 90%
+    &__links
+        display: flex;
+        flex-direction: column
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 650px;
+        opacity: 0
+        transition: 0.1s
+    &__link
+        color: #000;
+        font-weight: bold;
+        font-size: 25px
+        text-decoration: none
+        font-family: 'Poiret One', cursive;
+    &__line
+        display: flex
+        width: 40px
+        height: 3px;
+        background-color: #000
+        transition: 0.5s
+    &__logo
+        width: 50%
+        img
+            width: 100px
+    &__btn
+        flex-direction: column;
+        height: 40px;
+        justify-content: space-around;
+        width: 50%
+        display: flex;
+        align-items: flex-end;
+        margin-left: -230px;
+        cursor: pointer
+.animate
+    z-index: -1
+    position: fixed
+    top: 0
+    width: 100%
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__phel
+        width: 60px
+        position: absolute
+.add__menu
+    height: 228px
+    transition: 0.6s
+.active__menu
+    opacity: 1
+    transition: 0.9s
+.btn__active
+    &:nth-child(1)
+        transform: rotate(-45deg)
+    &:nth-child(2)
+        opacity: 0
+    &:nth-child(3)
+        transform: rotate(45deg)
+        margin-top: -78px;
+#cube-loader
+  background-color: #fff;
+  z-index: 10000;
+  align-items: center
+  display: flex
+  height: 100%
+  width: 100%
+  position: fixed
+
+  .caption
+    margin: 0 auto
+
+  .cube-loader
+    width: 73px
+    height: 73px
+    margin: 0 auto
+    margin-top: 49px
+    position: relative
+    transform: rotateZ(45deg)
+
+    .cube
+      position: relative
+      transform: rotateZ(45deg)
+      width: 50%
+      height: 50%
+      float: left
+      transform: scale(1.1)
+
+      &:before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: #34495e
+        animation: cube-loader 2.76s infinite linear both
+        transform-origin: 100% 100%
+
+    .loader-2
+      transform: scale(1.1) rotateZ(90deg)
+
+    .loader-3
+      transform: scale(1.1) rotateZ(180deg)
+
+    .loader-4
+      transform: scale(1.1) rotateZ(270deg)
+
+    .loader-2:before
+      animation-delay: 0.35s
+
+    .loader-3:before
+      animation-delay: 0.69s
+
+    .loader-4:before
+      animation-delay: 1.04s
+
+@keyframes cube-loader
+  0%, 10%
+    transform: perspective(136px) rotateX(-180deg)
+    opacity: 0
+
+  25%, 75%
+    transform: perspective(136px) rotateX(0deg)
+    opacity: 1
+
+  90%, 100%
+    transform: perspective(136px) rotateY(180deg)
+    opacity: 0

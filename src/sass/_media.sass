@@ -1,0 +1,47 @@
+@media ( max-width: 1199px )
+    .company
+        height: auto
+        padding-bottom: 100px
+        background: none
+        &__images
+            flex-direction: column
+            align-items: center;
+    .product
+        height: auto
+        padding-bottom: 100px
+        &__items
+            flex-wrap: wrap
+            justify-content: center
+        &__item
+            margin-bottom: 40px
+            margin-left: 10px
+@media ( max-width: 991px )
+    .header__nav
+        display: none
+    .mobile__nav
+        display: flex
+    .product
+        background: none
+    .footer
+        &__container
+            background: none
+    .mobile
+        display: flex
+@media ( max-width: 575px )
+    .header
+        background-size: 572px;
+        &__title
+            font-size: 50px
+    .footer
+        height: auto
+        padding-bottom: 80px
+        &__animate
+            img
+                width: 294px
+        &__links
+            flex-direction: column;
+        &__link
+            margin-bottom: 20px;
+    .mobile
+        &__btn
+            margin-left: -130px

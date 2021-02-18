@@ -1,0 +1,115 @@
+.footer
+    display: flex
+    justify-content: center
+    height: 768px
+    background: url("img/png-transparent-beekeeper-beekeeping-apiary-dynamic-hand-insects-cook-removebg-preview.png") no-repeat 99% 55%
+    background-size: 35%;
+    &__container
+        width: 90%
+        background: url("img/456-removebg-preview.png") no-repeat 10% 30%
+        background-size: 20%
+    &__box
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    &__animate
+        img
+            width: 375px
+    &__title
+        font-size: 58px
+        font-family: 'Marck Script', cursive;
+        text-align: center
+    &__links
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 50%
+    &__link
+        i
+            font-size: 40px
+    &__telegram
+        color: #28A7E8
+    &__phone
+        color: #000
+    &__whatsapp
+        color: #49EA66
+    &__vk
+        color: #5181B8
+    &__messege
+        color: #FFA100
+.whatsapp-button
+  position: fixed
+  right: 13px
+  bottom: 90px
+  transform: translate(-50%, -50%)
+  background: #25D366
+
+  /*цвет кнопки
+  border-radius: 50%
+  width: 55px
+
+  /*ширина кнопки
+  height: 55px
+
+  /*высота кнопки
+  color: #fff
+  text-align: center
+  line-height: 53px
+
+  /*центровка иконки в кнопке
+  font-size: 35px
+
+  /*размер иконки
+  z-index: 9999
+
+  a
+    color: #fff
+
+  &:before
+    content: " "
+    display: block
+    position: absolute
+    border: 50%
+    border: 1px solid #25D366
+
+    /*цвет анимированных волн от кнопки
+    left: -20px
+    right: -20px
+    top: -20px
+    bottom: -20px
+    border-radius: 50%
+    animation: animate 1.5s linear infinite
+    opacity: 0
+    backface-visibility: hidden
+
+  &:after
+    content: " "
+    display: block
+    position: absolute
+    border: 50%
+    border: 1px solid #25D366
+
+    /*цвет анимированных волн от кнопки
+    left: -20px
+    right: -20px
+    top: -20px
+    bottom: -20px
+    border-radius: 50%
+    animation: animate 1.5s linear infinite
+    opacity: 0
+    backface-visibility: hidden
+    animation-delay: .5s
+
+@keyframes animate
+  0%
+    transform: scale(0.5)
+    opacity: 0
+
+  50%
+    opacity: 1
+
+  100%
+    transform: scale(1.2)
+    opacity: 0
+
